@@ -19,7 +19,7 @@ const createUser = async (req, res) => {
 const getUser = async (req, res) => {
   const body = req.body;
   try {
-    if (body.UserId) {
+    if (body.userId) {
       const user = await UserModel.findById(body.userId);
       if (user) {
         res.status(404).send(user);
