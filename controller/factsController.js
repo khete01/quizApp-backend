@@ -11,6 +11,8 @@ const createFact = async (req, res) => {
   }
 };
 
+
+
 const getFact = async (req, res) => {
   const userId = req.params.userId;
   try {
